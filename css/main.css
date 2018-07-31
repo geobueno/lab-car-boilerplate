@@ -126,7 +126,6 @@ input#formGroupExampleInput.form-control.bg-warning.border.border-light {
   color: white;
 }
 
-
 .input-group-i{
   margin: 10px;
 }
@@ -151,13 +150,10 @@ li a {
 
 li{
   margin: 15px 0;
-  
 }
 
 #map {
   width: 100%;
-  height: 70vh;
-  border: 2px solid white;
-  
+  height: 60vh;
 }
 
