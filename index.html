@@ -11,7 +11,7 @@
 </head>
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white pt-4 pb-5">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-4">
       <div class="col-sm-8">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -23,13 +23,13 @@
       <div class="col-sm-4">
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav">
-            <li class="nav-item col-3">
+            <li class="nav-item col-4">
               <a class="nav-link" href="#">Viaja</a>
             </li>
             <li class="nav-item col-4">
               <a class="nav-link" href="#">Conduce</a>
             </li>
-            <li class="nav-item col-5">
+            <li class="nav-item col-6">
               <a class="nav-link" href="#">Inicia sesión</a>
             </li>
           </ul>
@@ -40,22 +40,27 @@
 
   <section class="home">
     <div class="row no-gutters">
-      <div class="jumbotron col-md-5 offset-md-7">
+      <div class="jumbotron bg-warning col-md-5 offset-md-7 col-sm-10 offset-sm-2 px-5 text-white d-none d-sm-block">
         <h1 class="display-4">Disfruta del viaje<br />Eres dueño del tu tiempo</h1>
-        <h2 class="lead">Viaja con <img class="logo-blanco" src="assets/images/logoBlanco.png" width="100"></h2>
+        <h2 class="lead font-weight-bold">Viaja con <img class="logo-blanco mb-1" src="assets/images/logoBlanco.png" width="110"></h2>
         <a class="btn btn-light btn-lg" href="#" role="button">REGÍSTRATE</a>
         <div class="separator">O bien</div>
         <a class="btn btn-light btn-lg" href="#" role="button">Conviértete en un conductor</a>
       </div>
+      <div class="jumbotron bg-warning col-sm-10 col-10 offset-sm-2 offset-2 px-5 text-white d-block d-sm-block d-md-none">
+        <h1 class="display-4">Comienza a viajar con <img class="logo-blanco mb-1" src="assets/images/logoBlanco.png" width="120"></h1>
+        <a class="btn btn-light btn-lg" href="#" role="button">Descarga el app</a>
+      </div>
     </div>
   </section>
 
-  <section class="app">
+  <section class="app bg-warning text-white">
     <div class="row no-gutters">
-      <div class="col-md-5 text-center pt-4 pb-4 border border-light border-right-0 border-left-0 ">
+      <div class="col-sm-5 text-center pt-4 pb-4 border border-light border-right-0 border-left-0 ">
+        <h2 class="lead d-block d-sm-block d-md-none">La nueva app</h2>
         <img class="phone" src="assets/images/iPhone6Plus.png">
       </div>
-      <div class="col-md-5 text-left border border-light  border-left-0">
+      <div class="col-sm-5 text-left border border-light border-left-0 d-none d-sm-block">
         <h2 class="lead">Descarga la nueva app</h2>
         <p>
           La versión actualizada de LabCar<br />
@@ -72,10 +77,12 @@
       </div>
     </div>
   </section>
-
+  <div class="bg-warning my-0 py-1">
+    <h4 class="d-block d-sm-block d-md-none text-white text-sm-center">Llega a tu destino aún más rápido</h4>
+  </div>
   <section class="conductor">
     <div class="row no-gutters">
-      <div class="jumbotron jumbotron-fluid col-md-4 offset-md-8 text-left">
+      <div class="jumbotron jumbotron-fluid text-left  col-md-4 col-sm-12 col-12 offset-md-8 px-5">
         <h2 class="lead">Conduce cuando quieras</h2>
         <p>Labcar es una opción flexible para alcanzar tus metas financieras.</p>
         <a class="btn btn-warning" href="#" role="button">Conviértete en un conductor</a>
@@ -83,9 +90,9 @@
     </div>
   </section>
 
-  <section class="place">
+  <section class="place bg-warning text-white">
     <div class="row no-gutters">
-      <div class="col-md-4 offset-md-1 text-left">
+      <div class="col-md-4 col-sm-10 col-10 offset-md-1 offset-sm-1 offset-1 text-left">
         <h2 class="lead">Tarifas</h2>
         <p>Consulta las tarifas LabCar aquí</p>
         <form class="text-center">
@@ -94,7 +101,7 @@
               <span class="input-group-i">
                 <i class="icon-circle-full"></i>
               </span>
-              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ingrese su punto de partida">
+              <input type="text" class="form-control bg-warning border border-light" id="formGroupExampleInput" placeholder="Ingrese su punto de partida">
             </div>
           </div>
           <div class="form-group">
@@ -102,44 +109,44 @@
               <span class="input-group-i">
                 <i class="icon-send"></i>
               </span>
-              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ingrese su destino">
+              <input type="text" class="form-control bg-warning border border-light" id="formGroupExampleInput" placeholder="Ingrese su destino">
             </div>
           </div>
           <a class="btn btn-light btn-lg mb-5" href="#" role="button">¡TRAZAR RUTA!</a>
         </form>
       </div>
-      <div class="col-md-4 offset-md-2">
-        <div class="map border border-light text-center">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d31754652.916937865!2d-69.71984836942276!3d-13.700246971959285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1532979989183" frameborder="0" allowfullscreen></iframe>
+      <div class="col-md-4 col-sm-10 col-10 offset-md-2 offset-sm-1 offset-1">
+        <div class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d31754652.916937865!2d-69.71984836942276!3d-13.700246971959285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1532979989183" frameborder="1"></iframe>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="footer">
+  <section class="footer bg-dark text-white">
     <img class="logo-blanco" src="assets/images/logoBlanco.png" width="130">
     <div class="top">
       <hr />
     </div>
     <div class="row no-gutters">
-      <div class="col-md-3 align-self-end">
+      <div class="col-md-3 offset-md-0 col-sm-6 offset-sm-6 col-6 offset-6 align-self-end">
         <a class="fb-ic">
-          <i class="icon-facebook icon-md white-text mr-1"></i>
+          <i class="icon-facebook icon-sm mr-1"></i>
         </a>
         <a class="tw-ic">
-          <i class="icon-twitter2 icon-md white-text mr-1"></i>
+          <i class="icon-twitter2 icon-sm  mr-1"></i>
         </a>
         <a class="ln-ic">
-          <i class="icon-linkedin icon-md white-text mr-1"></i>
+          <i class="icon-linkedin icon-sm  mr-1"></i>
         </a>
         <a class="app-ic">
-          <i class="icon-apple icon-md white-text mr-1"></i>
+          <i class="icon-apple icon-sm  mr-1"></i>
         </a>
         <a class="play-ic">
-          <i class="icon-play icon-lg white-text"> </i>
+          <i class="icon-play icon-sm"> </i>
         </a>
       </div>
-      <div class="col-md-3">
+      <div class="col-md-3 col-sm-6 col-6">
         <ul class="list-unstyled">
           <li><a href="#">Viaja</a></li>
           <li><a href="#">Conduce</a></li>
@@ -151,7 +158,7 @@
           <li><a href="#">Seguridad</a></li>
         </ul>
       </div>
-      <div class="col-md-3">
+      <div class="col-md-3 d-none d-sm-block">
         <ul class="list-unstyled">
           <li><a href="#">Oportunidades</a></li>
           <li><a href="#">Nuestra historia</a></li>
@@ -163,11 +170,11 @@
           <li><a href="#">Coders</a></li>
         </ul>
       </div>
-      <div class="col-md-3  d-flex align-self-end flex-column">
-        <img class="appstore mb-4"src="assets/images/appstore.png" width="160">
+      <div class="col-md-3 d-flex align-self-end flex-column col-sm-6 col-6">
+        <img class="appstore mb-4" src="assets/images/appstore.png" width="160">
         <img class="appstore mb-4" src="assets/images/enBadgeWebGeneric.png" width="160">
       </div>
-    </div>
+     </div>
     <div class="bottom">
       <hr />
       <div class="footer-copyright text-left">© 2017 LabCar technologies Inc.</div>
