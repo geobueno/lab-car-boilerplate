@@ -4,7 +4,7 @@
     {
       "icon": {
         "paths": [
-          "M86 896v-298l640-86-640-86v-298l896 384z"
+          "M928 1024h-832c-17.664 0-32-14.304-32-32v-512c0-17.696 14.336-32 32-32h96v-128c0-176.736 143.264-320 320-320s320 143.264 320 320v128h96c17.696 0 32 14.304 32 32v512c0 17.696-14.304 32-32 32zM704 304c0-97.216-85.984-176-192-176s-192 78.784-192 176v144h384v-144z"
         ],
         "attrs": [
           {}
@@ -12,9 +12,12 @@
         "isMulticolor": false,
         "isMulticolor2": false,
         "tags": [
-          "send"
+          "locked",
+          "encryption",
+          "login",
+          "log in"
         ],
-        "grid": 24
+        "grid": 16
       },
       "attrs": [
         {}
@@ -22,12 +25,12 @@
       "properties": {
         "order": 1,
         "id": 0,
-        "prevSize": 24,
-        "code": 59650,
-        "name": "send"
+        "prevSize": 32,
+        "code": 59655,
+        "name": "locked"
       },
       "setIdx": 0,
-      "setId": 4,
+      "setId": 5,
       "iconIdx": 0
     },
     {
@@ -52,11 +55,69 @@
         "order": 2,
         "id": 0,
         "name": "circle-full",
-        "prevSize": 16,
+        "prevSize": 32,
         "code": 59651
       },
-      "setIdx": 1,
+      "setIdx": 2,
       "setId": 3,
+      "iconIdx": 0
+    },
+    {
+      "icon": {
+        "paths": [
+          "M576 706.612v-52.78c70.498-39.728 128-138.772 128-237.832 0-159.058 0-288-192-288s-192 128.942-192 288c0 99.060 57.502 198.104 128 237.832v52.78c-217.102 17.748-384 124.42-384 253.388h896c0-128.968-166.898-235.64-384-253.388z"
+        ],
+        "tags": [
+          "user",
+          "profile",
+          "avatar",
+          "person",
+          "member"
+        ],
+        "defaultCode": 59761,
+        "grid": 16,
+        "attrs": []
+      },
+      "attrs": [],
+      "properties": {
+        "ligatures": "user, profile2",
+        "name": "user",
+        "order": 3,
+        "id": 114,
+        "prevSize": 32,
+        "code": 59761
+      },
+      "setIdx": 4,
+      "setId": 1,
+      "iconIdx": 113
+    },
+    {
+      "icon": {
+        "paths": [
+          "M86 896v-298l640-86-640-86v-298l896 384z"
+        ],
+        "attrs": [
+          {}
+        ],
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "tags": [
+          "send"
+        ],
+        "grid": 24
+      },
+      "attrs": [
+        {}
+      ],
+      "properties": {
+        "order": 1,
+        "id": 0,
+        "prevSize": 24,
+        "code": 59650,
+        "name": "send"
+      },
+      "setIdx": 1,
+      "setId": 4,
       "iconIdx": 0
     },
     {
@@ -85,7 +146,7 @@
         "prevSize": 28,
         "code": 59652
       },
-      "setIdx": 2,
+      "setIdx": 3,
       "setId": 2,
       "iconIdx": 0
     },
@@ -115,7 +176,7 @@
         "prevSize": 28,
         "code": 59653
       },
-      "setIdx": 2,
+      "setIdx": 3,
       "setId": 2,
       "iconIdx": 1
     },
@@ -146,7 +207,7 @@
         "prevSize": 28,
         "code": 59654
       },
-      "setIdx": 2,
+      "setIdx": 3,
       "setId": 2,
       "iconIdx": 2
     },
@@ -176,7 +237,7 @@
         "code": 59649,
         "name": "twitter2"
       },
-      "setIdx": 2,
+      "setIdx": 3,
       "setId": 2,
       "iconIdx": 3
     },
@@ -206,7 +267,7 @@
         "code": 59648,
         "name": "linkedin"
       },
-      "setIdx": 2,
+      "setIdx": 3,
       "setId": 2,
       "iconIdx": 4
     }

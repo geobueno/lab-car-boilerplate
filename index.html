@@ -38,46 +38,53 @@
     </nav>
   </header>
 
-  
+
   <div id="loginInModal" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="photo">
-          <img class="photoPersona" src="assets/images/persona.png" width="110">
+      <div class="modal-content bg-warning">
+        <button type="button" class="close d-flex justify-content-end p-2" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <div class="photo d-flex justify-content-center">
+          <img class="photoPersona py-3" src="assets/images/persona.png" width="200" height="100%">
         </div>
-        <div class="loginIn">
+        <div class="loginIn col-md-6 offset-md-3">
           <form>
-            <div class="form-group">
-              <label for="exampleInputEmail1">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            <div class="input-group py-2">
+              <span class="input-group-btn">
+                <button type="button" class="btn btn-default">
+                  <i class="icon-user"></i>
+                </button>
+              </span>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Username">
             </div>
-            <div class="form-group">
-              <label for="exampleInputPassword1">Password</label>
+            <div class="input-group py-2">
+              <span class="input-group-btn">
+                <button type="button" class="btn btn-default">
+                  <i class="icon-locked"></i>
+                </button>
+              </span>
               <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
             </div>
-            <div class="form-group form-check">
-              <input type="checkbox" class="form-check-input" id="exampleCheck1">
-              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            <div class="d-flex justify-content-center py-2">
+              <button type="submit" class="btn btn-white">LOGING</button>
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <large id="emailHelp" class="form-text text-muted py-2">Forgot your password? <span class="click text-danger">Click Here!</span></large>
+
           </form>
         </div>
       </div>
     </div>
   </div>
 
-
-  
-
   <section class="home">
     <div class="row no-gutters">
       <div class="jumbotron bg-warning col-md-5 offset-md-7 col-sm-10 offset-sm-2 px-5 text-white d-none d-sm-block">
         <h1 class="display-4">Disfruta del viaje<br />Eres dueño del tu tiempo</h1>
         <h2 class="lead font-weight-bold">Viaja con <img class="logo-blanco mb-1" src="assets/images/logoBlanco.png" width="110"></h2>
-        <a class="btn btn-light btn-lg" href="#" role="button">REGÍSTRATE</a>
+        <button class="btn btn-light btn-lg" href="#" type="button" data-toggle="modal" data-target="#registerModal" data-whatever="@getbootstrap">REGÍSTRATE</button>
         <div class="separator">O bien</div>
-        <a class="btn btn-light btn-lg" href="#" role="button">Conviértete en un conductor</a>
+        <button class="btn btn-light btn-lg" href="#" type="button" data-toggle="modal" data-target="#conductorModal" data-whatever="@getbootstrap">Conviértete en un conductor</button>
       </div>
       <div class="jumbotron bg-warning col-sm-10 col-10 offset-sm-2 offset-2 px-5 text-white d-block d-sm-block d-md-none">
         <h1 class="display-4">Comienza a viajar con <img class="logo-blanco mb-1" src="assets/images/logoBlanco.png" width="120"></h1>
@@ -85,6 +92,48 @@
       </div>
     </div>
   </section>
+
+  <div id="registerModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content bg-warning p-1">
+        <button type="button" class="close d-flex justify-content-end" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <div class="modal-body">
+          <button type="button" class="btn btn-dark col-12">Ya tienes una cuenta?</button>
+          <h6 class="title d-flex justify-content-center py-3">O CREA UNA NUEVA CUENTA</h6>
+          <form>
+            <div class="form-group">
+              <div class="row">
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Nombre">
+                </div>
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Apelido">
+                </div>
+              </div>
+              <input type="text" class="form-control my-2" placeholder="Correo Eletrónico: exemplo@correo.mx">
+              <input type="text" class="form-control my-2" placeholder="Teléfono">
+              <input type="text" class="form-control my-2" placeholder="Contraseña">
+              <input type="text" class="form-control my-2" placeholder="Ciudad">
+              <input type="text" class="form-control my-2" placeholder="(Opicional) Código de invitación">
+              <div class="dropdown">
+                <button class="btn btn-dark dropdown-toggle col-12 my-2" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Como te enteraste de nosostros?
+                </button>
+                <div class="dropdown-menu col-12" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Televisión</a>
+                  <a class="dropdown-item" href="#">WEB</a>
+                  <a class="dropdown-item" href="#">Otra opción</a>
+                </div>
+              </div>
+              <button type="button" class="btn btn-dark col-12 my-2">Enviar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <section class="app bg-warning text-white">
     <div class="row no-gutters">
@@ -117,10 +166,65 @@
       <div class="jumbotron jumbotron-fluid text-left  col-md-4 col-sm-12 col-12 offset-md-8 px-5">
         <h2 class="lead">Conduce cuando quieras</h2>
         <p>Labcar es una opción flexible para alcanzar tus metas financieras.</p>
-        <a class="btn btn-warning" href="#" role="button">Conviértete en un conductor</a>
+        <a class="btn btn-warning" href="#" role="button" data-toggle="modal" data-target="#conductorModal" data-whatever="@getbootstrap">Conviértete en un conductor</a>
       </div>
     </div>
   </section>
+
+  <div id="conductorModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content bg-warning p-1">
+        <button type="button" class="close d-flex justify-content-end" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="exampleFormControlSelect1 font-weight-bold">¿Tienes vehículo de 4 puertas</label>
+              <select class="form-control" id="exampleFormControlSelect1">
+                <option>Si</option>
+                <option>No</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlSelect1 font-weight-bold">Marca</label>
+              <select class="form-control" id="exampleFormControlSelect1">
+                <option>Elige la marca del vehículo</option>
+                <option>B</option>
+                <option>C</option>
+                <option>D</option>
+              </select>
+              <small class="info">¿No ves tu vehículo en la lista? Envía un correo electronico a <span class="email text-sucess">sociosmdv@uber.com</span></small>
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlSelect1 font-weight-bold">Modelo</label>
+              <select class="form-control" id="exampleFormControlSelect1">
+                <option>Modelos</option>
+                <option>A</option>
+                <option>B</option>
+                <option>C</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlSelect1 font-weight-bold">Año</label>
+              <select class="form-control" id="exampleFormControlSelect1">
+                <option>2017</option>
+                <option>2016</option>
+                <option>2015</option>
+                <option>2014</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlSelect1 font-weight-bold">Número de la matrícula</label>
+              <input type="text" class="form-control" placeholder="Número de la matrícula">
+              <medium class="info">La información de la matrícula ayuda a los clientes a identificar tu vehículo</medium>
+            </div>
+            <button type="button" class="btn btn-dark col-12 my-2">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <section class="place bg-warning text-white">
     <div class="row no-gutters">
@@ -209,10 +313,11 @@
     </div>
     <div class="bottom">
       <hr />
-      <div class="footer-copyright text-left">© 2017 LabCar technologies Inc.</div>
+      <small class="footer-copyright text-left">© 2017 LabCar technologies Inc.</small>
     </div>
   </section>
 
+  <script src="js/app.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
